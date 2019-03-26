@@ -1,0 +1,26 @@
+[
+	{
+		"host": "localhost",
+		"port": 3306,
+		"databaseName": "demo",
+		"user": "root",
+		"password": "zdm123",
+		"databaseType": "mysql",
+		"schemaName": "",
+		"ssl": false
+	},
+	{
+		"resultsPath": "E:\\练手项目\\fullstack-demo\\backend\\output",
+		"noConfigs": false,
+		"convertCaseFile": "none",
+		"convertCaseEntity": "none",
+		"convertCaseProperty": "none",
+		"propertyVisibility": "none",
+		"lazy": false,
+		"activeRecord": false,
+		"generateConstructor": false,
+		"customNamingStrategyPath": "",
+		"relationIds": false,
+		"insecureAuth": true
+	}
+]

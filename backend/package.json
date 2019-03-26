@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && npx pm2 start ./build/index.js",
+    "dev": "./node_modules/.bin/nodemon",
+    "generate-model": "npx typeorm-model-generator",
+    "prettier-watch": "npx onchange \"src/**/*.{js,css,ts}\" \"index.ts\" -v -- ./node_modules/.bin/prettier --write {{changed}}"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "typescript": "^3.3.4000"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.2",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-router": "^7.0.40",
+    "@types/koa-static": "^4.0.1",
+    "@types/node": "^11.11.7",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "ts-node": "^8.0.3"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}

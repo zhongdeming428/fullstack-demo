@@ -1,0 +1,9 @@
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.png
+**/*.jpg
+**/*.gif
+**/*.ico
+**/*.html
+package.json

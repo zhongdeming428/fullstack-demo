@@ -7,9 +7,15 @@
     "preserveConstEnums": true,
     "sourceMap": false,
     "strictNullChecks": true,
-    "target": "es5",
+    "target": "es2016",
     "outDir": "build",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es2016",
+      "esnext.asynciterable"
+    ]
   },
   "include": [
     "src/**/*"

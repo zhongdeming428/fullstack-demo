@@ -1,6 +1,7 @@
 import Router from '../common/common-router';
+import UserService from '../services/user.service';
 
-const path = `/hello`;
+const path = `/user`;
 
 const router = new Router();
 

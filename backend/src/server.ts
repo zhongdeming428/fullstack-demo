@@ -3,6 +3,7 @@ import { Middleware } from 'koa';
 import routes from './controllers';
 import logger = require('koa-logger');
 import bodyParser = require('koa-bodyparser');
+import Router = require('koa-router');
 
 class Server {
   constructor(public server: Koa) {
@@ -21,5 +22,6 @@ class Server {
 const app = new Server(new Koa());
 
 app.use(routes);
+app.server.use(new Router().allowedMethods());
 
 export default app;

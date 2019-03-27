@@ -10,7 +10,7 @@
 		"ssl": false
 	},
 	{
-		"resultsPath": "E:\\练手项目\\fullstack-demo\\backend\\output",
+		"resultsPath": "E:\\练手项目\\fullstack-demo\\backend\\src\\database\\models",
 		"noConfigs": false,
 		"convertCaseFile": "none",
 		"convertCaseEntity": "none",

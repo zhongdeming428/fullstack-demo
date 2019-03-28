@@ -16,12 +16,12 @@ class Server {
     routes.forEach(route => {
       this.server.use(route);
     });
+    this.server.use(new Router().allowedMethods());
   }
 }
 
 const app = new Server(new Koa());
 
 app.use(routes);
-app.server.use(new Router().allowedMethods());
 
 export default app;

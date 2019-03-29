@@ -3,6 +3,7 @@ import Router = require('koa-router');
 
 export interface IOptions {
   crossOrigin?: boolean; // 是否跨域
+  isAdmin?: boolean; // 鉴权
 }
 
 class CommonRouter extends Router {
